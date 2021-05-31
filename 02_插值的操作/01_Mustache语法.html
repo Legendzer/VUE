@@ -9,6 +9,10 @@
 <body>
     <div id="app">
         <h2>{{message}}</h2> 
+        <!-- mustache语法中，不仅仅可以直接写变量，也可以写简单的表达式 -->
+        <h2>{{firstname + lastname}}</h2>
+        <h2>{{firstname + ' ' + lastname}}</h2>
+        <h2>{{firstname}} {{lastname}}</h2>
     </div>
     <script src="../js/vue.js"></script>
     <script>
