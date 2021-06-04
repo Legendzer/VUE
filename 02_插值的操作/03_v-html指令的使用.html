@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{url}}</h2>
+        <!-- 
+            v-html
+                该指令后面往往会跟上一个String类型
+                会将String的html解析出来并且进行渲染
+         -->
+        <h2 v-html="url"></h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好啊',
+                url: '<a href = "http://www.baidu.com">百度一下</a>'
+            }
+        })
+    </script>
+</body>
+</html>
