@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in letters" :key="item">{{item}}</li>
+        </ul>
+        <button @click="btnClick">按钮</button>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                letters:['a', 'b', 'c', 'd', 'e']
+            },
+            methods:{
+                btnClick(){
+                    //1、push()，在数组最后添加一个元素，页面响应
+                    //this.letters.push('aaa', 'bbb')
+
+                    //2、pop()，删除数组中的最后一个元素，页面响应
+                    //this.letters.pop();
+
+                    //3、shift()，删除数组中的第一个元素，页面响应
+                    //this.letters.shift();
+
+                    //4、unshift()，在数组最前面添加元素，页面响应
+                    //this.letters.unshift('aaa', 'bbb');
+
+                    //5、splice()，作用：删除元素/插入元素/替换元素
+                    //删除元素：第二个参数传入你要删除的元素的数量（如果没有传，就删除后面所有的元素）
+                    //替换元素：第二个参数，表示我们要替换几个元素，后面是用于替换前面的元素
+                    //插入元素：第二个参数，传入0，并且后面跟上要插入的元素
+                    //splice(start)
+                    //this.letters.splice(2,)
+
+                    //6、sort()，排序，页面响应
+                    //this.letters.sort()
+
+                    //7、reverse()，数组反转，页面响应
+                    //this.letters.reverse()
+
+                    //注意：通过索引值修改数据中的元素，页面不响应
+                    //this.letters[0] = 'bbbbb';
+                }               
+            }
+        })
+    </script>
+</body>
+</html>
