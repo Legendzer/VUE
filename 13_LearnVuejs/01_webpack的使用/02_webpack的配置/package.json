@@ -1,7 +1,6 @@
 {
   "name": "meetwebpack",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +10,22 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^3.6.0"
-  }
+  },
+  "dependencies": {
+    "fast-deep-equal": "^1.1.0",
+    "fast-json-stable-stringify": "^2.1.0",
+    "for-in": "^1.0.2",
+    "function-bind": "^1.1.1",
+    "get-caller-file": "^1.0.3",
+    "get-stream": "^3.0.0",
+    "get-value": "^2.0.6",
+    "graceful-fs": "^4.2.6",
+    "has": "^1.0.3",
+    "has-flag": "^2.0.0",
+    "hosted-git-info": "^2.8.9",
+    "https-browserify": "^1.0.0",
+    "ieee754": "^1.2.1",
+    "inherits": "^2.0.4"
+  },
+  "description": ""
 }
